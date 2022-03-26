@@ -1,4 +1,7 @@
+
+/*Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Comfortaa:wght@300&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Lato:ital,wght@0,300;0,700;0,900;1,400;1,900&family=Modak&family=Righteous&display=swap');
 
 /*Variables*/
 
@@ -102,10 +105,15 @@ header .menu {
     
 }
 
+header .menu__link:hover{
+    color: rgb(173, 1, 159);
+}
+
 header .menu__item { 
     border: 2px solid yellow;
     transition: border-color .3s ease-in-out;
     justify-content: space-between;
+    border-radius: 15px;
 
 }
 
@@ -133,6 +141,7 @@ img{
     display: flex;
     z-index: 100;
 }
+
 .logo{
     font-weight: 900;
     font-size: 30px;
@@ -148,6 +157,17 @@ img{
    background-size: cover;
    background-position: center;
    background-attachment: fixed;
+}
+
+.banner .texto-centrado{
+    font-family:'Righteous', cursive;
+    ;
+}
+
+.banner .texto-centrado:hover{
+
+    color: rgb(136, 255, 0);
+    font-family: 'Alfa Slab One', cursive;
 }
 .banner__descripcion{
     position: absolute;
