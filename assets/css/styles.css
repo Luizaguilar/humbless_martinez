@@ -4,18 +4,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Lato:ital,wght@0,300;0,700;0,900;1,400;1,900&family=Modak&family=Righteous&display=swap');
 
 /*Variables*/
-
+/*
 :root {
 
     --principal: white;
     --secondary: black;
-    /*--font-primary:;  */
+    /*--font-primary:;  
     --font-secondary:'Roboto', sans-serif;
     --text-lg: 2em;
     --text-md: 1.8em;
 }
 
-/*RESET*/
+/*RESET
 
 * ,
 *::before,
@@ -26,7 +26,7 @@
 
 }
 
-/*Globals*/
+/*Globals
 
 html {
     height: 100vw;
@@ -36,6 +36,7 @@ html {
 
 body{
     min-height: 100vh;
+    font-family: var(--font-primary);
 }
 
 
@@ -50,7 +51,7 @@ a{
     display: inline-block;
 }
 
-/*Helpers*/
+/*Helpers
 
 .flex-row {
     display: flex;
@@ -69,11 +70,63 @@ a{
 
 }
 
-/* Inicia Header*/
+/*Bootsrap*/
+
+    body{
+font-family: 'Comfortaa';
+overflow-x: hidden;
+}
+
+
+/*Menu*/
+
+#menu li > a{
+    font-size: 19px;
+    font-weight: bold;
+    color: black;
+}
+
+#menu form > button{
+    font-size: 19px;
+    font-weight: bold;
+
+}
+
+/*Slider*/
+
+.carousel-inner{
+    max-height: 39rem;
+}
+
+
+
+/*Formulario*/
+
+#contenedor-formulario{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border-radius: 5px;
+    max-width: 500px;
+}
+
+
+/*Media Queries pantalla SM*/
+
+@media(min-width:768px){
+#intro{
+    width: 90% !important;
+}
+
+}
+
+/* Inicia Header
 header {
     grid-area: header;
     background-color: yellow;
-    font-family: var(--font-primary);
+    
     padding: 1rem 0;
     width: 100%;
     left: 0;
@@ -147,7 +200,7 @@ img{
     font-size: 30px;
     margin: 10px;
     font-family: cambria;
-   color: #fff;
+    color: #fff;
 }
 .banner{
     height: 50vh;
@@ -234,7 +287,8 @@ color: rgb(247, 240, 181);
     padding: 10px;
 
 }
-@media(min-width:520px){
+
+/*@media(min-width:520px){
    .banner h1{
        font-size: 30px;
    }
@@ -243,9 +297,7 @@ color: rgb(247, 240, 181);
        grid-gap: 10px;
        grid-template-columns: repeat(2,1fr);
    }
-   .team .team__grid {
-    grid-template-columns: repeat(2,1fr);
-   }
+
    .info .contenedor{
     grid-template-columns: repeat(3,150px);
     justify-content: space-around;
@@ -260,11 +312,10 @@ color: rgb(247, 240, 181);
 
 @media(min-width:728px){
 
-    .team .team__grid{
-        grid-template-columns: repeat(4,195px);
-        justify-content: space-around;
-    }
+    
 }
+
+
 @media(min-width:1024px){
    .contenedor{
        width: 1000px;
