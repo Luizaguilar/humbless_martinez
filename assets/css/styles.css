@@ -99,8 +99,17 @@ overflow-x: hidden;
 }
 
 
+/*Cards animaciones*/
 
-/*Formulario*/
+.movimiento:hover{
+
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+
+/*Formulario
 
 #contenedor-formulario{
     position: absolute;
